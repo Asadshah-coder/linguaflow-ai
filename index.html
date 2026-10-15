@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LinguaFlow AI — free all-language translator with automatic language detection, 100+ languages, text-to-speech, dark mode and private on-device history."
+    />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta property="og:title" content="LinguaFlow AI — All-Language Translator" />
+    <meta
+      property="og:description"
+      content="Translate anything, in any language. Free, no account needed."
+    />
+    <meta property="og:type" content="website" />
+    <title>LinguaFlow AI — All-Language Translator</title>
+    <script>
+      // Apply saved theme before paint to avoid a flash.
+      try {
+        var s = JSON.parse(localStorage.getItem('linguaflow:settings:v1') || '{}');
+        if (s.theme === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
